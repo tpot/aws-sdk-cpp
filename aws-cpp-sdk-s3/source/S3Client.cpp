@@ -1700,7 +1700,7 @@ HeadBucketOutcome S3Client::HeadBucket(const HeadBucketRequest& request) const
   XmlOutcome outcome = MakeRequest(uri, request, HttpMethod::HTTP_HEAD);
   if(outcome.IsSuccess())
   {
-    return HeadBucketOutcome(NoResult());
+    return HeadBucketOutcome(HeadBucketResult(outcome.GetResult()));
   }
   else
   {

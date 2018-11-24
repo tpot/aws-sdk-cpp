@@ -54,6 +54,7 @@
 #include <aws/s3/model/GetObjectTaggingResult.h>
 #include <aws/s3/model/GetObjectTorrentResult.h>
 #include <aws/s3/model/GetPublicAccessBlockResult.h>
+#include <aws/s3/model/HeadBucketResult.h>
 #include <aws/s3/model/HeadObjectResult.h>
 #include <aws/s3/model/ListBucketAnalyticsConfigurationsResult.h>
 #include <aws/s3/model/ListBucketInventoryConfigurationsResult.h>
@@ -235,7 +236,7 @@ namespace Aws
         typedef Aws::Utils::Outcome<GetObjectTaggingResult, Aws::Client::AWSError<S3Errors>> GetObjectTaggingOutcome;
         typedef Aws::Utils::Outcome<GetObjectTorrentResult, Aws::Client::AWSError<S3Errors>> GetObjectTorrentOutcome;
         typedef Aws::Utils::Outcome<GetPublicAccessBlockResult, Aws::Client::AWSError<S3Errors>> GetPublicAccessBlockOutcome;
-        typedef Aws::Utils::Outcome<Aws::NoResult, Aws::Client::AWSError<S3Errors>> HeadBucketOutcome;
+        typedef Aws::Utils::Outcome<HeadBucketResult, Aws::Client::AWSError<S3Errors>> HeadBucketOutcome;
         typedef Aws::Utils::Outcome<HeadObjectResult, Aws::Client::AWSError<S3Errors>> HeadObjectOutcome;
         typedef Aws::Utils::Outcome<ListBucketAnalyticsConfigurationsResult, Aws::Client::AWSError<S3Errors>> ListBucketAnalyticsConfigurationsOutcome;
         typedef Aws::Utils::Outcome<ListBucketInventoryConfigurationsResult, Aws::Client::AWSError<S3Errors>> ListBucketInventoryConfigurationsOutcome;
